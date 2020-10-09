@@ -1,0 +1,76 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:DEV-HANDSON/configuration.git
+          search-paths: '*-service'
+          clone-on-start: true
+          ignore-local-ssh-settings: true
+          passphrase: secret
+          private-key:  |
+            -----BEGIN RSA PRIVATE KEY-----
+            Proc-Type: 4,ENCRYPTED
+            DEK-Info: DES-EDE3-CBC,AF46E60E8E647377
+
+            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
+            -----END RSA PRIVATE KEY-----
+
+
+          force-pull: true
+  security:
+    user:
+      name: user
+      password: password
+debug: true
